@@ -3,8 +3,9 @@
     <head>
          <title>THABHELO DUVE</title>
          <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <!-- Linking the html file with my css stylesheet -->
-         <link rel="stylesheet" href="style.css"> 
+         <!-- Linking the html file with my css stylesheet and js-->
+         <link rel="stylesheet" href="style.css">
+         <script src="C:\Users\Thabhelo\Desktop\thabhelo-website-dev\validateForm.js"></script> 
     </head>
 
     <body>
@@ -31,7 +32,7 @@
 <main>
     <section id="about" class="centered-text">
         <h2>About Me</h2>
-        <p>I am a highly motivated and driven individual, with some valuable experience through a variety of internships and programs. My most recent position as a Teaching Assistant (TA) at <a href="https://www.emziniwecode.com/cs7" target="_blank">Emzini We Code</a> has allowed me to expand, not only my knowledge and understanding of programming but my network as well. It has given me a glance at college life as a computer science student and exposed me to an opportunity to show some level of aptitude and ability to teach.
+        <p>I am a highly motivated and self-driven individual, with some valuable experience through a variety of internships and programs. My most recent position as a Teaching Assistant (TA) at <a href="https://www.emziniwecode.com/cs7" target="_blank">Emzini We Code</a> has allowed me to expand, not only my knowledge and understanding of programming but my network as well. It has given me a glance at college life as a computer science student and exposed me to an opportunity to show some level of aptitude and ability to teach.
 
         My previous position as a data analysis clerk at <a href="https://www.telone.co.zw/" target="_blank">TelOne</a> allowed me to hone my skills in data management and analysis, while also fostering a strong attention to detail and a commitment to accuracy. This exposed me to a platform where I exercised my digital and financial literacy skills, use of technologies like Microsoft Excel, and several other interiorly used technologies. 
 
@@ -54,12 +55,32 @@
             <li>Mathematics</li>
         </ul>
     </section>
-    <section id="projects">
+    <section id="projects" class = block-text>
         <h2>My Projects</h2>
+        <div id="acknowledgements-content" class = block-text>
+            <a id="acknowledgements-toggle" href="#">Acknowledgements</a>
+            <ul>
+                <li>Hog: Developed at the University of California, Berkeley by John DeNero and the CS61A staff, this project is based on a 2010 SIGCSE Nifty Assignment by Todd Neller. Eric Khumalo introduced me to the project</li>
+                <li>Trends: Aditi Muralidharan developed this project with John DeNero. Hamilton Nguyen extended it. Keegan Mann developed the autograder. Eric Khumalo introduced me to the project. Many others have contributed as well.</li>
+                <li>Ants: Tom Magrino and Eric Tzeng developed this project with John DeNero. Jessica Wan contributed the artwork. Joy Jeng and Mark Miyashita invented the queen ant. Eric Khumalo introduced me to the project. Many others have contributed to the project as well!</li>
+            </ul>
+        </div>
         <ul>
-            <li><a href="#">Project 1</a> - Description of Project 1</li>
-            <li><a href="#">Project 2</a> - Description of Project 2</li>
-            <li><a href="#">Project 3</a> - Description of Project 3</li>
+            <li><a href="#">Game of Hog</a> - This is a dice game where two players alternate turns trying to reach 100 points first. The implementation includes a simulator for the game, as well as multiple strategies for players to use. The implementation uses higher-order functions, control functions, and other concepts from the Composing Programs online text, including the use of recursion, lambda functions, and list comprehensions. The project is divided into two phases: in the first phase, I developed a simulator for the game, and in the second phase, I experiment with ways to improve upon the basic strategy of always rolling a fixed number of dice. The project also includes a graphical user interface for playing the game and a set of tests to check the correctness of the implementation.</li>
+            <li><a href="#">Trends</a> - This is a programming project that involves developing a geographic visualization of Twitter data across the USA to discover trends. The project is divided into three phases, and each phase involves implementing different functionalities.
+
+                In Phase 1, the project requires the implementation of an abstract data type for tweets, splitting the text of a tweet into words, and calculating the amount of positive or negative feeling in a tweet. The implementation involves creating two different representations of a tweet using dictionaries and functions.
+                
+                In Phase 2, the project requires the implementation of two functions that together determine the centers of U.S. states. The shape of a state is represented as a list of polygons, and the position abstract data type is used to represent geographic latitude-longitude positions on the Earth. The implementation involves finding the centroid and area of a polygon and computing the centroid of a collection of polygons.
+                
+                In Phase 3, the project requires grouping tweets by their nearest state center and calculating the average positive or negative feeling in all the tweets associated with a state. The implementation involves implementing a function that groups tweets by state and another function that calculates the average sentiment of tweets associated with a state.
+                
+                The project's ultimate goal is to map the sentiment of any word or phrase in tweets across the USA.</li>
+            <li><a href="#">Ants</a> - This one is called "Ants Vs. SomeBees" and is a tower defense game where the player controls an ant colony that must protect its queen from invading bees. The game is based on the popular game "Plants Vs. Zombies" and combines functional and object-oriented programming paradigms.
+
+                The game consists of a series of turns where new bees may enter the colony and new ants can be placed. Bees can either move to the exit of their current location or sting an ant that blocks their path, while ants can take different actions such as throwing leaves at bees or adding food to the colony. The game ends either when a bee reaches the ant queen (resulting in a loss) or all bees have been vanquished (resulting in a win).
+                
+                The project includes several parts, with each part building on the previous one. The first part involves adding food costs and implementing a HarvesterAnt class, which adds food to the colony. The second part involves adding code to the Place constructor that tracks entrances and implementing a new type of place called Water, where only water-safe insects can be deployed. The third part involves implementing a new type of ant called FireAnt, which has a special <code>reduce_armor</code> method that damages all insects in the same place.</li>
         </ul>
     </section>
     <section id="blog" class = block-text>

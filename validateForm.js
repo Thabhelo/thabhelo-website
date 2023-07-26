@@ -35,3 +35,18 @@ function validateForm() {
   
     return true;
   }
+
+  var toggle = document.getElementById("acknowledgements-toggle");
+var content = document.getElementById("acknowledgements-content");
+
+content.style.display = "none"; // hide acknowledgements content by default
+
+toggle.addEventListener("click", function(e) {
+  e.preventDefault();
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+});
+  

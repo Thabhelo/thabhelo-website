@@ -12,6 +12,11 @@ body {
 
   }
 
+  #acknowledgements-toggle {
+    font-weight: bold;
+    cursor: pointer;
+  }
+
   .centered-text {
   text-align: center;
 }
