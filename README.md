@@ -14,11 +14,11 @@ The website features:
 The website is built with:
 - HTML 
 - CSS
-- Some JavaScript for form validation
-- PHP for submitting contact messages to email
+- JavaScript for form validation
+- PHP for handling contact messages
 
 ## Instructions
-Open https://www.thabheloduve.com to access the website.
+Open https://www.thabhelo.ghithub.io to access the website.
 
 ## Support
 For any questions or issues, feel free to contact me on any of the social media links listed on the website. Pull requests are also welcome!
