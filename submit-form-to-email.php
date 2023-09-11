@@ -8,7 +8,7 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Set the recipient email address
-$to = "youremail@example.com";
+$to = "thabheloduve@gmail.com";
 
 // Set the email subject
 $subject = "New message from your website";
