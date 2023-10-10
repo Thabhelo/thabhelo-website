@@ -18,7 +18,7 @@ The website is built with:
 - PHP for handling contact messages
 
 ## Instructions
-Open https://www.thabhelo.github.io to access the website.
+Open https://www.github.com/thabhelo.github.io to access the website.
 
 ## Support
 For any questions or issues, feel free to contact me on any of the social media links listed on the website. Pull requests are also welcome!
